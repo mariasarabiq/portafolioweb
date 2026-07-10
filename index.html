@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - María Sarabia</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    
+</head>
+
+<body>
+    <input type="radio" name="language" id="lang-es" class="lang-radio" checked>
+    <input type="radio" name="language" id="lang-en" class="lang-radio">
+    <input type="radio" name="language" id="lang-fr" class="lang-radio">
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-button" aria-label="Abrir menú" title="Menú">
+        <span class="menu-dot"></span>
+        <span class="menu-dot"></span>
+        <span class="menu-dot"></span>
+    </label>
+
+    <header class="header">
+        <nav class="container nav-content">
+            <div class="nav-logo">
+                <svg style="width: 1.5rem; height: 1.5rem; color: #C2185B; fill: currentColor;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <a href="#" class="logo-text">María Sarabia</a>
+                <span style="color: #9CA3AF; font-size: 0.875rem;" class="hidden-on-mobile">|</span>
+                <div class="lang-selector">
+                    <label for="lang-es" class="lang-label">ES</label>
+                    <label for="lang-en" class="lang-label">ING</label>
+                    <label for="lang-fr" class="lang-label">FRA</label>
+                </div>
+                <a href="mailto:2023030547@upsin.edu.mx" class="nav-email-link">2023030547@upsin.edu.mx</a>
+            </div>
+
+            <div class="nav-links">
+                <a href="#sobre-mi" data-es="Sobre mí" data-en="About Me" data-fr="À Propos">Sobre mí</a>
+                <a href="#habilidades" data-es="Habilidades" data-en="Skills" data-fr="Compétences">Habilidades</a>
+                <a href="#certificaciones" data-es="Certificados" data-en="Certificates" data-fr="Certificats">Certificados</a>
+                <a href="#proyectos" data-es="Proyectos" data-en="Projects" data-fr="Projets">Proyectos</a>
+            </div>
+            
+            
+        </nav>
+    </header>
+    <main class="content-wrapper">
+        <section id="hero" class="bg-soft-pink-50">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <div class="lang-content">
+                         <!-- español -->
+                        <div class="es">
+                            <h1 class="hero-title">Hola, mi nombre es María Guadalupe Sarabia Velarde y soy estudiante de Ingeniería en Tecnologías de la Información.</h1>
+                            <p class="hero-subtitle">Me especializo en el desarrollo de plataformas web y móviles, integrando servicios en la nube e Inteligencia Artificial para crear soluciones tecnológicas eficientes e innovadoras.</p>
+                            <div class="hero-links">
+                                <a href="https://github.com/mariasarabiq" target="_blank">Github<span>↗</span></a>
+                                <a href="https://www.linkedin.com/in/maria-guadalupe-sarabia-velarde-205888387/" target="_blank">LinkedIn<span>↗</span></a>
+                                <a href="archivos/Maria Sarabia CV.pdf" target="_blank">Currículo<span>↗</span></a>
+                            </div>
+                        </div>
+                         <!-- inglés -->
+                        <div class="en">
+                            <h1 class="hero-title">Hello, my name is María Guadalupe Sarabia Velarde and I am a student of Information Technology Engineering.</h1>
+                            <p class="hero-subtitle">I specialize in developing web and mobile platforms, integrating cloud services and Artificial Intelligence to create efficient and innovative technological solutions.</p>
+                            <div class="hero-links">
+                                <a href="https://github.com/mariasarabiq" target="_blank">Github<span>↗</span></a>
+                                <a href="https://www.linkedin.com/in/maria-guadalupe-sarabia-velarde-205888387/" target="_blank">LinkedIn<span>↗</span></a>
+                                <a href="archivos/Maria Sarabia CV.pdf" target="_blank">Resume<span>↗</span></a>
+                            </div>
+                        </div>
+                        <!-- francés -->
+                        <div class="fr">
+                            <h1 class="hero-title">Bonjour, mon nom est María Guadalupe Sarabia Velarde et je suis étudiante en Ingénierie des Technologies de l'Information.</h1>
+                            <p class="hero-subtitle">Je me spécialise dans le développement de plateformes web et mobiles, en intégrant les services cloud et l'Intelligence Artificielle pour créer des solutions technologiques efficaces et innovantes.</p>
+                            <div class="hero-links">
+                                <a href="https://github.com/mariasarabiq" target="_blank">Github<span>↗</span></a>
+                                <a href="https://www.linkedin.com/in/maria-guadalupe-sarabia-velarde-205888387/" target="_blank">LinkedIn<span>↗</span></a>
+                                <a href="archivos/Maria Sarabia CV.pdf" target="_blank">CV<span>↗</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <picture>
+                        <source media="(max-width: 1023px)" srcset="imagenes/fotomaria-md.png">
+                        <img src="imagenes/fotomaria.png" alt="Foto de perfil de María Sarabia" class="hero-image">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE MI -->
+        <section id="sobre-mi">
+            <div class="container">
+                <div class="lang-content">
+                    <div class="es"><h2 class="section-title">SOBRE MI</h2></div>
+                    <div class="en"><h2 class="section-title">ABOUT ME</h2></div>
+                    <div class="fr"><h2 class="section-title">À PROPOS DE MOI</h2></div>
+                </div>
+
+                <div class="about-card">
+                    <div class="lang-content">
+                        <div class="es"><p class="about-content">Soy una persona proactiva y responsable, comprometida con el trabajo en equipo y el aprendizaje continuo. Como estudiante de Ingeniería en Tecnologías de la Información, mi gran motivación es seguir adquiriendo nuevos conocimientos y perfeccionando mis habilidades todos los días. Me apasiona especialmente el desarrollo Front-End, un área en la que disfruto crear interfaces modernas, atractivas y dinámicas utilizando frameworks como Angular e Ionic. Asimismo, cuento con bases sólidas en HTML, CSS, lenguajes como TypeScript y Java, y en la gestión y diseño de sistemas informáticos completos.</p></div>
+                        <div class="en"><p class="about-content">I am a proactive and responsible individual, committed to teamwork and continuous learning. As an Information Technology Engineering student, my greatest motivation is to continue acquiring new knowledge and refining my skills every day. I am particularly passionate about Front-End development, an area in which I enjoy creating modern, attractive, and dynamic interfaces using frameworks such as Angular and Ionic. I also have a solid foundation in HTML, CSS, languages like TypeScript and Java, and in the management and design of complete computer systems.</p></div>
+                        <div class="fr"><p class="about-content">Je suis une personne proactive et responsable, attachée au travail d'équipe et à l'apprentissage continu. Étudiante en génie informatique, ma principale motivation est d'acquérir de nouvelles connaissances et de perfectionner mes compétences au quotidien. Je suis particulièrement passionnée par le développement front-end, domaine dans lequel j'apprécie créer des interfaces modernes, attrayantes et dynamiques grâce à des frameworks tels qu'Angular et Ionic. Je possède également de solides bases en HTML, CSS, langages comme TypeScript et Java, ainsi qu'en gestion et conception de systèmes informatiques complets.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section id="habilidades">
+            <div class="container">
+                <div class="lang-content">
+                    <div class="es"><h2 class="section-title">HABILIDADES TÉCNICAS</h2></div>
+                    <div class="en"><h2 class="section-title">TECHNICAL SKILLS</h2></div>
+                    <div class="fr"><h2 class="section-title">COMPÉTENCES TECHNIQUES</h2></div>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <span class="skill-title color-html">HTML</span>
+                        <img srcset="imagenes/htmllogo.png 1x, imagenes/htmllogo-2x.png 2x" src="imagenes/htmllogo.png" alt="Logo HTML" class="skill-image">
+                        <div class="lang-content">
+                            <div class="es"><span class="skill-label">Desarrollo web</span></div>
+                            <div class="en"><span class="skill-label">Web development</span></div>
+                            <div class="fr"><span class="skill-label">Développement web</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-title color-css">CSS</span>
+                        <img srcset="imagenes/csslogo.png 1x, imagenes/csslogo-2x.png 2x" src="imagenes/csslogo.png" alt="Logo CSS" class="skill-image">
+                        <div class="lang-content">
+                            <div class="es"><span class="skill-label">Desarrollo web</span></div>
+                            <div class="en"><span class="skill-label">Web development</span></div>
+                            <div class="fr"><span class="skill-label">Développement web</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-title color-ts">TypeScript</span>
+                        <img srcset="imagenes/typescriptlogo.png 1x, imagenes/typescriptlogo-2x.png 2x" src="imagenes/typescriptlogo.png" alt="Logo TypeScript" class="skill-image">
+                        <div class="lang-content">
+                            <div class="es"><span class="skill-label">Programación</span></div>
+                            <div class="en"><span class="skill-label">Programming</span></div>
+                            <div class="fr"><span class="skill-label">Programmation</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-title color-java">Java</span>
+                        <img srcset="imagenes/javalogo.png 1x, imagenes/javalogo-2x.png 2x" src="imagenes/javalogo.png" alt="Logo Java" class="skill-image">
+                        <div class="lang-content">
+                            <div class="es"><span class="skill-label">Programación</span></div>
+                            <div class="en"><span class="skill-label">Programming</span></div>
+                            <div class="fr"><span class="skill-label">Programmation</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-title color-angular">Angular</span>
+                        <img srcset="imagenes/angularlogo.png 1x, imagenes/angularlogo-2x.png 2x" src="imagenes/angularlogo.png" alt="Logo Angular" class="skill-image">
+                        <div class="lang-content">
+                            <div class="es"><span class="skill-label">Framework web</span></div>
+                            <div class="en"><span class="skill-label">Web Framework</span></div>
+                            <div class="fr"><span class="skill-label">Framework web</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-title color-ionic">Ionic</span>
+                        <img srcset="imagenes/ioniclogo.png 1x, imagenes/ioniclogo-2x.png 2x" src="imagenes/ioniclogo.png" alt="Logo Ionic" class="skill-image">
+                        <div class="lang-content">
+                            <div class="es"><span class="skill-label">Desarrollo móvil</span></div>
+                            <div class="en"><span class="skill-label">Mobile development</span></div>
+                            <div class="fr"><span class="skill-label">Développement mobile</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-title color-python">Python</span>
+                        <img srcset="imagenes/pythonlogo.png 1x, imagenes/pythonlogo-2x.png 2x" src="imagenes/pythonlogo.png" alt="Logo Python" class="skill-image">
+                        <div class="lang-content">
+                            <div class="es"><span class="skill-label">Programación</span></div>
+                            <div class="en"><span class="skill-label">Programming</span></div>
+                            <div class="fr"><span class="skill-label">Programmation</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-title color-github">GitHub</span>
+                        <img srcset="imagenes/githublogo.png 1x, imagenes/githublogo-2x.png 2x" src="imagenes/githublogo.png" alt="Logo GitHub" class="skill-image">
+                        <div class="lang-content">
+                            <div class="es"><span class="skill-label">Herramientas</span></div>
+                            <div class="en"><span class="skill-label">Tools</span></div>
+                            <div class="fr"><span class="skill-label">Outils</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-title color-figma">Figma</span>
+                        <img srcset="imagenes/figmalogo.png 1x, imagenes/figmalogo-2x.png 2x" src="imagenes/figmalogo.png" alt="Logo Figma" class="skill-image">
+                        <div class="lang-content">
+                            <div class="es"><span class="skill-label">Software</span></div>
+                            <div class="en"><span class="skill-label">Software</span></div>
+                            <div class="fr"><span class="skill-label">Logiciels</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-title color-netbeans">NetBeans</span>
+                        <img srcset="imagenes/netbeanslogo.png 1x, imagenes/netbeanslogo-2x.png 2x" src="imagenes/netbeanslogo.png" alt="Logo NetBeans" class="skill-image">
+                        <div class="lang-content">
+                            <div class="es"><span class="skill-label">Software</span></div>
+                            <div class="en"><span class="skill-label">Software</span></div>
+                            <div class="fr"><span class="skill-label">Logiciels</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-title color-mysql">MySQL</span>
+                        <img srcset="imagenes/mysqllogo.png 1x, imagenes/mysqllogo-2x.png 2x" src="imagenes/mysqllogo.png" alt="Logo MySQL" class="skill-image">
+                        <div class="lang-content">
+                            <div class="es"><span class="skill-label">Bases de datos</span></div>
+                            <div class="en"><span class="skill-label">Databases</span></div>
+                            <div class="fr"><span class="skill-label">Bases de données</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-title color-supabase">Supabase</span>
+                        <img srcset="imagenes/supabaselogo.png 1x, imagenes/supabaselogo-2x.png 2x" src="imagenes/supabaselogo.png" alt="Logo Supabase" class="skill-image">
+                        <div class="lang-content">
+                            <div class="es"><span class="skill-label">Backend en la nube</span></div>
+                            <div class="en"><span class="skill-label">Cloud Backend</span></div>
+                            <div class="fr"><span class="skill-label">Backend cloud</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-title color-opencv">OpenCV</span>
+                        <img srcset="imagenes/opencvlogo.png 1x, imagenes/opencvlogo-2x.png 2x" src="imagenes/opencvlogo.png" alt="Logo OpenCV" class="skill-image">
+                        <div class="lang-content">
+                            <div class="es"><span class="skill-label">Inteligencia artificial</span></div>
+                            <div class="en"><span class="skill-label">Artificial Intelligence</span></div>
+                            <div class="fr"><span class="skill-label">Intelligence artificielle</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-title color-linux">Linux Ubuntu</span>
+                        <img srcset="imagenes/ubuntulogo.png 1x, imagenes/ubuntulogo-2x.png 2x" src="imagenes/ubuntulogo.png" alt="Logo Linux Ubuntu" class="skill-image">
+                        <div class="lang-content">
+                            <div class="es"><span class="skill-label">Sistemas operativos</span></div>
+                            <div class="en"><span class="skill-label">Operating Systems</span></div>
+                            <div class="fr"><span class="skill-label">Systèmes d'exploitation</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-title color-security">Kali Linux</span>
+                        <img srcset="imagenes/kalilogo.png 1x, imagenes/kalilogo-2x.png 2x" src="imagenes/kalilogo.png" alt="Logo Kali Linux" class="skill-image">
+                        <div class="lang-content">
+                            <div class="es"><span class="skill-label">Ciberseguridad</span></div>
+                            <div class="en"><span class="skill-label">Cybersecurity</span></div>
+                            <div class="fr"><span class="skill-label">Cybersécurité</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-title color-cisco">Cisco</span>
+                        <img srcset="imagenes/ciscologo.png 1x, imagenes/ciscologo-2x.png 2x" src="imagenes/ciscologo.png" alt="Logo Cisco" class="skill-image">
+                        <div class="lang-content">
+                            <div class="es"><span class="skill-label">Redes</span></div>
+                            <div class="en"><span class="skill-label">Networking</span></div>
+                            <div class="fr"><span class="skill-label">Réseaux</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!-- CERTIFICACIONES -->
+        <section id="certificaciones">
+            <div class="container">
+
+                <div class="lang-content">
+                    <div class="es"><h2 class="section-title">CERTIFICACIONES</h2></div>
+                    <div class="en"><h2 class="section-title">CERTIFICATIONS</h2></div>
+                    <div class="fr"><h2 class="section-title">CERTIFICATIONS</h2></div>
+                </div>
+
+                <div class="certs-grid">
+                    <div class="cert-card cert-card-primary">
+                        <div class="lang-content">
+                            <div class="es">
+                                <h3 class="cert-name">CCNAv7 Introduction to Networks</h3>
+                                <a href="archivos/CCNAv7 Introduction to Networks.pdf" target="_blank" class="cert-link">Ver certificado<span>↗</span></a>
+                            </div>
+                            <div class="en">
+                                <h3 class="cert-name">CCNAv7 Introduction to Networks</h3>
+                                <a href="archivos/CCNAv7 Introduction to Networks.pdf" target="_blank" class="cert-link">View certificate<span>↗</span></a>
+                            </div>
+                            <div class="fr">
+                                <h3 class="cert-name">CCNAv7 Introduction to Networks</h3>
+                                <a href="archivos/CCNAv7 Introduction to Networks.pdf" target="_blank" class="cert-link">Voir certificat<span>↗</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card cert-card-secondary">
+                        <div class="lang-content">
+                            <div class="es">
+                                <h3 class="cert-name">CSS Essentials</h3>
+                                <a href="archivos/CSS Essentials.pdf" target="_blank" class="cert-link">Ver certificado<span>↗</span></a>
+                            </div>
+                            <div class="en">
+                                <h3 class="cert-name">CSS Essentials</h3>
+                                <a href="archivos/CSS Essentials.pdf" target="_blank" class="cert-link">View certificate<span>↗</span></a>
+                            </div>
+                            <div class="fr">
+                                <h3 class="cert-name">CSS Essentials</h3>
+                                <a href="archivos/CSS Essentials.pdf" target="_blank" class="cert-link">Voir certificat<span>↗</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card cert-card-primary">
+                        <div class="lang-content">
+                            <div class="es">
+                                <h3 class="cert-name">HTML Essentials</h3>
+                                <a href="archivos/HTML Essentials.pdf" target="_blank" class="cert-link">Ver certificado<span>↗</span></a>
+                            </div>
+                            <div class="en">
+                                <h3 class="cert-name">HTML Essentials</h3>
+                                <a href="archivos/HTML Essentials.pdf" target="_blank" class="cert-link">View certificate<span>↗</span></a>
+                            </div>
+                            <div class="fr">
+                                <h3 class="cert-name">HTML Essentials</h3>
+                                <a href="archivos/HTML Essentials.pdf" target="_blank" class="cert-link">Voir certificat<span>↗</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card cert-card-secondary">
+                        <div class="lang-content">
+                            <div class="es">
+                                <h3 class="cert-name">Inteligencia artificial para finanzas</h3>
+                                <a href="archivos/INTELIGENCIA ARTIFICIAL PARA FINANZAS.pdf" target="_blank" class="cert-link">Ver certificado<span>↗</span></a>
+                            </div>
+                            <div class="en">
+                                <h3 class="cert-name">Artificial Intelligence for Finance</h3>
+                                <a href="archivos/INTELIGENCIA ARTIFICIAL PARA FINANZAS.pdf" target="_blank" class="cert-link">View certificate<span>↗</span></a>
+                            </div>
+                            <div class="fr">
+                                <h3 class="cert-name">Intelligence artificielle pour les finances</h3>
+                                <a href="archivos/INTELIGENCIA ARTIFICIAL PARA FINANZAS.pdf" target="_blank" class="cert-link">Voir certificat<span>↗</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card cert-card-primary">
+                        <div class="lang-content">
+                            <div class="es">
+                                <h3 class="cert-name">Inteligencia artificial para servicio al cliente</h3>
+                                <a href="archivos/INTELIGENCIA ARTIFICIAL PARA SERVICIO AL CLIENTE.pdf" target="_blank" class="cert-link">Ver certificado<span>↗</span></a>
+                            </div>
+                            <div class="en">
+                                <h3 class="cert-name">Artificial Intelligence for Customer Service</h3>
+                                <a href="archivos/INTELIGENCIA ARTIFICIAL PARA SERVICIO AL CLIENTE.pdf" target="_blank" class="cert-link">View certificate<span>↗</span></a>
+                            </div>
+                            <div class="fr">
+                                <h3 class="cert-name">Intelligence artificielle pour le service client</h3>
+                                <a href="archivos/INTELIGENCIA ARTIFICIAL PARA SERVICIO AL CLIENTE.pdf" target="_blank" class="cert-link">Voir certificat<span>↗</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card cert-card-secondary">
+                        <div class="lang-content">
+                            <div class="es">
+                                <h3 class="cert-name">IT Essentials: Hardware y software de PC</h3>
+                                <a href="archivos/IT Essentials PC Hardware and Software.pdf" target="_blank" class="cert-link">Ver certificado<span>↗</span></a>
+                            </div>
+                            <div class="en">
+                                <h3 class="cert-name">IT Essentials: PC Hardware and Software</h3>
+                                <a href="archivos/IT Essentials PC Hardware and Software.pdf" target="_blank" class="cert-link">View certificate<span>↗</span></a>
+                            </div>
+                            <div class="fr">
+                                <h3 class="cert-name">IT Essentials : Matériel et logiciels PC</h3>
+                                <a href="archivos/IT Essentials PC Hardware and Software.pdf" target="_blank" class="cert-link">Voir certificat<span>↗</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card cert-card-secondary">
+                        <div class="lang-content">
+                            <div class="es">
+                                <h3 class="cert-name">Midjourney para generación de imágenes</h3>
+                                <a href="archivos/MIDJOURNEY PARA GENERACIÓN.pdf" target="_blank" class="cert-link">Ver certificado<span>↗</span></a>
+                            </div>
+                            <div class="en">
+                                <h3 class="cert-name">Midjourney for Image Generation</h3>
+                                <a href="archivos/MIDJOURNEY PARA GENERACIÓN.pdf" target="_blank" class="cert-link">View certificate<span>↗</span></a>
+                            </div>
+                            <div class="fr">
+                                <h3 class="cert-name">Midjourney pour la génération d'images</h3>
+                                <a href="archivos/MIDJOURNEY PARA GENERACIÓN.pdf" target="_blank" class="cert-link">Voir certificat<span>↗</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card cert-card-primary">
+                        <div class="lang-content">
+                            <div class="es">
+                                <h3 class="cert-name">Programador (orientado a objetos)</h3>
+                                <a href="archivos/Programador (orientado a objetos).pdf" target="_blank" class="cert-link">Ver certificado<span>↗</span></a>
+                            </div>
+                            <div class="en">
+                                <h3 class="cert-name">Object-Oriented Programmer</h3>
+                                <a href="archivos/Programador (orientado a objetos).pdf" target="_blank" class="cert-link">View certificate<span>↗</span></a>
+                            </div>
+                            <div class="fr">
+                                <h3 class="cert-name">Programmeur (orienté objet)</h3>
+                                <a href="archivos/Programador (orientado a objetos).pdf" target="_blank" class="cert-link">Voir certificat<span>↗</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card cert-card-secondary">
+                        <div class="lang-content">
+                            <div class="es">
+                                <h3 class="cert-name">Stable Diffusion para generación de imágenes con IA</h3>
+                                <a href="archivos/Stable Diffusion.pdf" target="_blank" class="cert-link">Ver certificado<span>↗</span></a>
+                            </div>
+                            <div class="en">
+                                <h3 class="cert-name">Stable Diffusion for AI Image Generation</h3>
+                                <a href="archivos/Stable Diffusion.pdf" target="_blank" class="cert-link">View certificate<span>↗</span></a>
+                            </div>
+                            <div class="fr">
+                                <h3 class="cert-name">Stable Diffusion pour la génération d'images avec IA</h3>
+                                <a href="archivos/Stable Diffusion.pdf" target="_blank" class="cert-link">Voir certificat<span>↗</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </section>
+        <!-- Proyecto: Ahorro Fácil -->
+         <div class="project-item">
+            <div class="project-info">
+                <div class="lang-content">
+                    <!-- Español -->
+                    <div class="es">
+                        <h3 class="project-title"><span>Gasto Fácil: App de gestión financiera</span></h3>
+                        <p class="project-desc">Diseño y desarrollo de una aplicación móvil enfocada en la gestión de finanzas personales, el seguimiento de gastos y la visualización interactiva de metas de ahorro. El proyecto incluye la maquetación de interfaces UI/UX fluidas y la implementación de lógica de base de datos para garantizar el manejo seguro y eficiente de la información del usuario.</p>
+                        <p class="project-tech">Tecnologías utilizadas: Angular, Ionic, Bases de datos, UI/UX.</p>
+                        <a href="https://mellifluous-churros-cf34e5.netlify.app" target="_blank" class="btn-repo">Enlace</a>
+                        <a href="https://github.com/mariasarabiq/gasto_facil" target="_blank" class="btn-repo">Repositorio</a>
+                    </div>
+                    <!-- Inglés -->
+                    <div class="en">
+                        <h3 class="project-title"><span>Gasto Fácil: Financial management app</span></h3>
+                        <p class="project-desc">Design and development of a mobile application focused on personal finance management, expense tracking, and interactive visualization of savings goals. The project includes fluid UI/UX interface design and the implementation of database logic to ensure secure and efficient handling of user information.</p>
+                        <p class="project-tech">Technologies used: Angular, Ionic, Databases, UI/UX.</p>
+                        <a href="https://mellifluous-churros-cf34e5.netlify.app" target="_blank" class="btn-repo">Enlace</a>
+                        <a href="https://github.com/mariasarabiq/gasto_facil" target="_blank" class="btn-repo">Repositorio</a>
+                    </div>
+                    <!-- Francés -->
+                    <div class="fr">
+                        <h3 class="project-title"><span>Gasto Fácil: Application de gestion financière</span></h3>
+                        <p class="project-desc">Conception et développement d'une application mobile axée sur la gestion des finances personnelles, le suivi des dépenses et la visualisation interactive des objectifs d'épargne. Le projet comprend la conception d'interfaces UI/UX fluides et la mise en œuvre de la logique de base de données pour garantir un traitement sécurisé et efficace des informations des utilisateurs.</p>
+                        <p class="project-tech">Technologies utilisées: Angular, Ionic, Bases de données, UI/UX.</p>
+                        <a href="https://mellifluous-churros-cf34e5.netlify.app" target="_blank" class="btn-repo">Enlace</a>
+                        <a href="https://github.com/mariasarabiq/gasto_facil" target="_blank" class="btn-repo">Repositorio</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-mockup">
+                <div class="lang-content">
+                    <div class="es">
+                        <picture>
+                            <source media="(max-width: 1023px)" srcset="imagenes/ahorrofacil-md.png">
+                            <!-- Recuerda nombrar tu captura de pantalla como ahorrofacil.png -->
+                            <img src="imagenes/ahorrofacil.png" alt="Captura de la app Ahorro Fácil" class="project-mockup-image">
+                        </picture>
+                    </div>
+                    <div class="en">
+                        <picture>
+                            <source media="(max-width: 1023px)" srcset="imagenes/ahorrofacil-md.png">
+                            <img src="imagenes/ahorrofacil.png" alt="Ahorro Fácil app screenshot" class="project-mockup-image">
+                        </picture>
+                    </div>
+                    <div class="fr">
+                        <picture>
+                            <source media="(max-width: 1023px)" srcset="imagenes/ahorrofacil-md.png">
+                            <img src="imagenes/ahorrofacil.png" alt="Capture d'écran de l'application Ahorro Fácil" class="project-mockup-image">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-info">
+                <div class="lang-content">
+                    <div class="es">
+                        <h3 class="project-title"><span>Sistema de autenticación escolar</span></h3>
+                        <p class="project-desc">Desarrollo de un módulo de inicio de sesión seguro y responsivo para una plataforma escolar. El sistema gestiona el acceso de los usuarios mediante la validación de credenciales en tiempo real, conectándose de manera eficiente a una base de datos y protegiendo las rutas de la aplicación.</p>
+                        <p class="project-tech">Tecnologías utilizadas: Angular, TypeScript, HTML, CSS.</p>
+                        <a href="https://site-escuela-frontend.vercel.app/login" target="_blank" class="btn-repo">Enlace</a>
+                        <a href="https://github.com/mariasarabiq/sistema-gestion-escolar/tree/main" target="_blank" class="btn-repo">Repositorio</a>
+                    </div>
+                    <div class="en">
+                        <h3 class="project-title"><span>School authentication system</span></h3>
+                        <p class="project-desc">Development of a secure and responsive login module for a school platform. The system manages user access through real-time credential validation, efficiently connecting to a database and protecting application routes.</p>
+                        <p class="project-tech">Technologies used: Angular, TypeScript, HTML, CSS.</p>
+                        <a href="https://site-escuela-frontend.vercel.app/login" target="_blank" class="btn-repo">Link</a>
+                        <a href="https://github.com/mariasarabiq/sistema-gestion-escolar/tree/main" target="_blank" class="btn-repo">Repository</a>
+                    </div>
+                    <div class="fr">
+                        <h3 class="project-title"><span>Système d'authentification scolaire</span></h3>
+                        <p class="project-desc">Développement d'un module de connexion sécurisé et réactif pour une plateforme scolaire. Le système gère l'accès des utilisateurs via une validation des identifiants en temps réel, se connectant efficacement à une base de données et protégeant les routes de l'application.</p>
+                        <p class="project-tech">Technologies utilisées: Angular, TypeScript, HTML, CSS.</p>
+                        <a href="https://site-escuela-frontend.vercel.app/login" target="_blank" class="btn-repo">Lien</a>
+                        <a href="https://github.com/mariasarabiq/sistema-gestion-escolar/tree/main" target="_blank" class="btn-repo">Repository</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-mockup">
+                <div class="lang-content">
+                    <div class="es">
+                        <picture>
+                            <source media="(max-width: 1023px)" srcset="imagenes/login-md.png">
+                            <img src="imagenes/login.png" alt="Sistema de Autenticación Escolar" class="project-mockup-image">
+                        </picture>
+                    </div>
+                    <div class="en">
+                        <picture>
+                            <source media="(max-width: 1023px)" srcset="imagenes/login-md.png">
+                            <img src="imagenes/login.png" alt="School Authentication System" class="project-mockup-image">
+                        </picture>
+                    </div>
+                    <div class="fr">
+                        <picture>
+                            <source media="(max-width: 1023px)" srcset="imagenes/login-md.png">
+                            <img src="imagenes/login.png" alt="Système d'authentification scolaire" class="project-mockup-image">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-info">
+                <div class="lang-content">
+                    <div class="es">
+                        <h3 class="project-title"><span>Reconocimiento facial y de emociones</span></h3>
+                        <p class="project-desc">Implementación de un sistema de visión por computadora capaz de detectar rostros y clasificar emociones en tiempo real. El proyecto involucró el entrenamiento de modelos de aprendizaje automático y el procesamiento de imágenes para la extracción de características faciales con alta precisión.</p>
+                        <p class="project-tech">Tecnologías utilizadas: Python, OpenCV, Modelos de Machine Learning.</p>
+                        <a href="https://github.com/mariasarabiq/Reconocimiento-Facial" target="_blank" class="btn-repo">Repositorio</a>
+                    </div>
+                    <div class="en">
+                        <h3 class="project-title"><span>Facial and Emotion Recognition</span></h3>
+                        <p class="project-desc">Implementation of a computer vision system capable of detecting faces and classifying emotions in real-time. The project involved training machine learning models and processing images for highly accurate facial feature extraction.</p>
+                        <p class="project-tech">Technologies used: Python, OpenCV, Machine Learning Models.</p>
+                        <a href="https://github.com/mariasarabiq/Reconocimiento-Facial" target="_blank" class="btn-repo">Repository</a>
+                    </div>
+                    <div class="fr">
+                        <h3 class="project-title"><span>Reconnaissance faciale et des émotions</span></h3>
+                        <p class="project-desc">Mise en œuvre d'un système de vision par ordinateur capable de détecter des visages et de classer des émotions en temps réel. Le projet a impliqué la formation de modèles d'apprentissage automatique et le traitement d'images pour l'extraction très précise des caractéristiques faciales.</p>
+                        <p class="project-tech">Technologies utilisées: Python, OpenCV, Modèles d'apprentissage automatique.</p>
+                        <a href="https://github.com/mariasarabiq/Reconocimiento-Facial" target="_blank" class="btn-repo">Dépôt</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-mockup">
+                <div class="lang-content">
+                    <div class="es">
+                        <picture>
+                            <source media="(max-width: 1023px)" srcset="imagenes/reconocimiento-md.png">
+                            <img src="imagenes/reconocimiento.png" alt="Reconocimiento Facial" class="project-mockup-image">
+                        </picture>
+                    </div>
+                    <div class="en">
+                        <picture>
+                            <source media="(max-width: 1023px)" srcset="imagenes/reconocimiento-md.png">
+                            <img src="imagenes/reconocimiento.png" alt="Facial Recognition" class="project-mockup-image">
+                        </picture>
+                    </div>
+                    <div class="fr">
+                        <picture>
+                            <source media="(max-width: 1023px)" srcset="imagenes/reconocimiento-md.png">
+                            <img src="imagenes/reconocimiento.png" alt="Reconnaissance Faciale" class="project-mockup-image">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer class="footer bg-primary-pink">
+            <div class="container">
+                <div class="footer-grid">
+
+                    <!-- navegación -->
+                    <div>
+                        <div class="lang-content">
+                            <div class="es"><h4 class="footer-title">Navegación</h4>
+                                <ul class="footer-links">
+                                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                                    <li><a href="#habilidades">Habilidades técnicas</a></li>
+                                    <li><a href="#certificaciones">Certificaciones</a></li>
+                                    <li><a href="#proyectos">Proyectos principales</a></li>
+                                </ul>
+                            </div>
+                            <div class="en"><h4 class="footer-title">Navigation</h4>
+                                <ul class="footer-links"><li><a href="#sobre-mi">About Me</a></li>
+                                    <li><a href="#habilidades">Technical Skills</a></li>
+                                    <li><a href="#certificaciones">Certifications</a></li>
+                                    <li><a href="#proyectos">Main Projects</a></li>
+                                </ul>
+                            </div>
+                            <div class="fr"><h4 class="footer-title">Navigation</h4>
+                                <ul class="footer-links"><li><a href="#sobre-mi">À Propos</a></li>
+                                    <li><a href="#habilidades">Compétences techniques</a></li>
+                                    <li><a href="#certificaciones">Certificats</a></li>
+                                    <li><a href="#proyectos">Projets principaux</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- contacto -->
+                    <div>
+                        <div class="lang-content">
+                            <div class="es"><h4 class="footer-title">Información de contacto</h4></div>
+                            <div class="en"><h4 class="footer-title">Contact Information</h4></div>
+                            <div class="fr"><h4 class="footer-title">Informations de contact</h4></div>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="mailto:2023030547@upsin.edu.mx" class="footer-email-link">2023030547@upsin.edu.mx</a></li>
+                            <li><a href="mailto:guadalupesarabiavelarde@gmail.com" class="footer-email-link">guadalupesarabiavelarde@gmail.com</a></li>
+                            <li><a href="https://github.com/mariasarabiq" target="_blank">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/maria-guadalupe-sarabia-velarde-205888387/" target="_blank">LinkedIn</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- portafolio -->
+                    <div class="lang-content">
+                        <div class="es"><h4 class="footer-title">Portafolio</h4>
+                            <ul class="footer-links">
+                                <li><a href="archivos/Maria Sarabia CV.pdf"  target="_blank">Explora mis habilidades y proyectos</a></li>
+                            </ul>
+                        </div>
+                        <div class="en"><h4 class="footer-title">Portfolio</h4>
+                            <ul class="footer-links">
+                                <li><a href="archivos/Maria Sarabia CV.pdf"  target="_blank">Explore my skills and projects.</a></li>
+                            </ul>
+                        </div>
+                        <div class="fr"><h4 class="footer-title">Portefeuille</h4>
+                            <ul class="footer-links">
+                                <li><a href="archivos/Maria Sarabia CV.pdf"  target="_blank">Explorez mes compétences et projets.</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-copyright">
+                    <div class="lang-content">
+                        <div class="es">Mayo 2026 © Todos los derechos reservados por <span style="font-size: 0.875rem;">María Sarabia.</span></div>
+                        <div class="en">May 2026 © All rights reserved by <span style="font-size: 0.875rem;">María Sarabia.</span></div>
+                        <div class="fr">Mai 2026 © Tous droits réservés par <span style="font-size: 0.875rem;">María Sarabia.</span></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
